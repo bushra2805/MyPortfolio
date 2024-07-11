@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #080b3a;
+    color: #fffdfd;
+}
+
+header {
+    background-color: #1107d5;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: rgb(17, 0, 148);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#home {
+    background-color: #dede44;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+#home p {
+    margin: 0.5rem 0;
+}
+
+#skills .skill p {
+    margin: 0.5rem 0;
+}
+.skill canvas {
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    width: 10%;
+    height: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress {
+    background-color: #54f659;
+    height: 100%;
+    transition: width 1s ease-in-out;
+}
+.skill canvas {
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Projects Section */
+.project img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1107d5;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+    position: -ms-page;
+    width: 100%;
+    bottom: 100%;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #4cafaa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
